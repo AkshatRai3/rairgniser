@@ -6,12 +6,14 @@ import StatsCard from "@/components/dashboard/stats-card";
 import WeeklyChart from "@/components/dashboard/weekly-chart";
 import ProgressRing from "@/components/dashboard/progress-ring";
 import Link from "next/link";
+import SignInPage from "@/app/sign-in/[[...sign-in]]/page"
 
 export default async function Dashboard() {
   const user = await currentUser();
 
   if (!user) {
-    return <div>Please sign in</div>;
+    return <SignInPage />
+
   }
 
   const dbUser = await prisma.user.findUnique({
