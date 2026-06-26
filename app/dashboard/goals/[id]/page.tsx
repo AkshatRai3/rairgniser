@@ -1,6 +1,7 @@
 import { prisma } from "@/lib/prisma";
 import Link from "next/link";
 import ProjectForm from "@/components/projects/project-form";
+import { Project } from "@prisma/client";
 
 export default async function GoalPage({
   params,
@@ -104,7 +105,7 @@ export default async function GoalPage({
         </h2>
 
         {goal.projects.map(
-          (project) => (
+          (project: Project) => (
 
             <Link
             key={project.id}
