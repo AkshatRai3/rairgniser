@@ -21,7 +21,7 @@ export async function updateProjectProgress(
 
   const completed =
     project.tasks.filter(
-      (task) => task.completed
+      (task:any) => task.completed
     ).length;
 
   const progress =

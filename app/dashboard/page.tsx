@@ -45,7 +45,7 @@ today.setHours(
 
 const overdueTasks =
   tasks.filter(
-    (task) =>
+    (task:any) =>
       task.dueDate &&
       !task.completed &&
       new Date(task.dueDate) <
@@ -54,7 +54,7 @@ const overdueTasks =
 
 const dueTodayTasks =
   tasks.filter(
-    (task) => {
+    (task:any) => {
 
       if (
         !task.dueDate ||
@@ -76,7 +76,7 @@ const dueTodayTasks =
 
 const upcomingTasks =
   tasks.filter(
-    (task) => {
+    (task:any) => {
 
       if (
         !task.dueDate ||
