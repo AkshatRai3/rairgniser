@@ -93,7 +93,7 @@ const upcomingTasks =
   );
 
   const completed = tasks.filter(
-    (task) => task.completed
+    (task:any) => task.completed
   ).length;
 
   const percentage =
