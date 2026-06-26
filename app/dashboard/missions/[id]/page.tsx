@@ -88,7 +88,7 @@ export default async function MissionPage({
         </h2>
 
         {mission.goals.map(
-          (goal) => (
+          (goal : any) => (
 
             <Link
               href={`/dashboard/goals/${goal.id}`}
