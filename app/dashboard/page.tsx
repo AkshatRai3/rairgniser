@@ -162,7 +162,7 @@ const upcomingTasks =
       {overdueTasks.length === 0
         ? "No overdue tasks"
         : overdueTasks.map(
-            (task) => (
+            (task : any) => (
 
               <Link
   key={task.id}
@@ -188,7 +188,7 @@ const upcomingTasks =
       {dueTodayTasks.length === 0
         ? "Nothing due today"
         : dueTodayTasks.map(
-            (task) => (
+            (task : any) => (
 
               <Link
   key={task.id}
@@ -216,7 +216,7 @@ const upcomingTasks =
         : upcomingTasks
             .slice(0, 5)
             .map(
-              (task) => (
+              (task : any) => (
 
                 <Link
   key={task.id}
@@ -244,7 +244,7 @@ const upcomingTasks =
 
   <div className="grid gap-3">
 
-    {missions.map((mission) => (
+    {missions.map((mission : any) => (
 
   <Link
     key={mission.id}

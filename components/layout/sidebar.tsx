@@ -22,7 +22,7 @@ export default function Sidebar() {
       </h1>
 
       <nav className="space-y-2">
-        {links.map((link) => (
+        {links.map((link : any) => (
           <Link
             key={link.href}
             href={link.href}

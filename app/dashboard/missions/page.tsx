@@ -36,7 +36,7 @@ export default async function MissionsPage() {
       
       <div className="grid gap-4">
 
-        {missions.map((mission) => (
+        {missions.map((mission : any) => (
 
           <Link
             href={`/dashboard/missions/${mission.id}`}

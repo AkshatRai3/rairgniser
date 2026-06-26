@@ -16,7 +16,7 @@ export default async function ProjectsPage() {
         Projects
       </h1>
 
-      {projects.map((project) => (
+      {projects.map((project : any) => (
 
         <div
           key={project.id}
